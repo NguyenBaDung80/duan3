@@ -18,9 +18,15 @@
 <p id="demo"></p>
 
 <script>
+var oImg = document.createElement("img")
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}
+  document.getElementById("demo").innerHTML =oImg.setAttribute('src', 'http://www.testtrackinglink.com');
+oImg.setAttribute('alt', 'na');
+oImg.setAttribute('height', '1px');
+oImg.setAttribute('width', '1px');
+document.body.appendChild(oImg);;
+};
+
 </script>
 
 
