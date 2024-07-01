@@ -10,25 +10,19 @@
     <h1>Ba Dung's webpage</h1>
     <h2>xin chào các bạn, mình là Dũng</h2>
 
-<p id="demo"></p>
+<button id="myButton">Click me to show image</button>
+    <img id="myImage" src="https://via.placeholder.com/300" alt="Placeholder Image">
 
-
-<button onclick="myFunction()">Click me</button>
-
-<p id="demo"></p>
-
-<script>
-var oImg = document.createElement("img")
-function myFunction() {
-  document.getElementById("demo").innerHTML =oImg.setAttribute('src', 'http://www.testtrackinglink.com');
-oImg.setAttribute('alt', 'na');
-oImg.setAttribute('height', '1px');
-oImg.setAttribute('width', '1px');
-document.body.appendChild(oImg);;
-};
-
-</script>
-
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            var img = document.getElementById('myImage');
+            if (img.style.display === 'none') {
+                img.style.display = 'block';
+            } else {
+                img.style.display = 'none';
+            }
+        });
+    </script>
 
 
 </body>
