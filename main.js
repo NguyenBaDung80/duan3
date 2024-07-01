@@ -1,1 +1,5 @@
-<button onclick="document.write('Hello, world')">Click me</button>
+<button onclick="myFunction()">Click me</button>
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+  }
