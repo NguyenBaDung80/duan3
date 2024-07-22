@@ -32,3 +32,9 @@ html{
 .container .btn:hover {
   background-color: #1A5319;
 }
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
